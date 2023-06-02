@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000;
+    background-image: url('./bg.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    text-align: center;
+    margin: 56px 0;
+    color: #ddd;
+    font-size: 40px;
+}
+
+.flex-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    flex: 0 1 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.row-2 {
+    flex-grow: 1;
+    display: flex;
+}
+
+.card-body {
+    padding: 24px;
+}
+
+.card-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.row-3, .row-4 {
+    flex-wrap: wrap;
+}
+
+.contacts {
+    text-align: center;
+}
+
+.contacts-title {
+    color: orange;
+    font-size: 32px;
+    margin: 0 0 8px;
+}
+
+.contacts-button {
+    width: 56px;
+    height: 56px;
+    display: inline-block;
+    margin: 8px;
+    padding: 0 0 16px;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+    transition: all .1s ease;
+}
+
+.contacts-button:hover {
+    border-bottom: 1px solid orange;
+}
+
+.card {
+    flex-basis: calc(25% - 40px);
+    margin: 0 16px 32px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, .8);
+    border: 1px solid #000;
+}
+
+.card-content {
+    flex-grow: 1;
+    color: #ddd;
+    line-height: 20px;
+}
+
+.card-title {
+    margin: 0 0 24px;
+}
+
+.card:nth-child(1) .card-title {
+    color: yellow;
+}
+
+.card:nth-child(2) .card-title {
+    color: green;
+}
+
+.card:nth-child(3) .card-title {
+    color: lightblue;
+}
+
+.card:nth-child(4) .card-title {
+    color: pink;
+}
+
+@media screen and (max-width: 1072px) {
+    .card {
+        flex-basis: calc(50% - 48px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        flex-basis: 100%;
+        margin-bottom: 16px;
+    }
+}
