@@ -15,7 +15,7 @@ body {
 
 h1 {
     text-align: center;
-    margin: 56px 0;
+    margin: 56px 32px;
     color: #ffa500;
     font-size: 40px;
 }
@@ -71,6 +71,14 @@ h1 {
     cursor: pointer;
     border-bottom: 1px solid transparent;
     transition: all .1s ease;
+    outline: none;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }
 
 .contacts-button:hover {
@@ -117,7 +125,7 @@ h1 {
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 590px) {
     .card {
         flex-basis: 100%;
         margin-bottom: 16px;
