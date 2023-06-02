@@ -16,7 +16,7 @@ body {
 h1 {
     text-align: center;
     margin: 56px 0;
-    color: #ddd;
+    color: #ffa500;
     font-size: 40px;
 }
 
@@ -57,7 +57,7 @@ h1 {
 }
 
 .contacts-title {
-    color: orange;
+    color: #fff;
     font-size: 32px;
     margin: 0 0 8px;
 }
@@ -74,7 +74,7 @@ h1 {
 }
 
 .contacts-button:hover {
-    border-bottom: 1px solid orange;
+    border-bottom: 1px solid #fff;
 }
 
 .card {
