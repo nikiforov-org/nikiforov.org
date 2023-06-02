@@ -19,3 +19,7 @@ buttons.forEach(button => {
         }
     })
 });
+
+document.body.addEventListener(`contextmenu`, e => {
+    e.preventDefault();
+})

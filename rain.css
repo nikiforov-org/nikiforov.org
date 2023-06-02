@@ -2,6 +2,7 @@
     width: 100vw;
     height: 20vh;
     position: fixed;
+    z-index: -1;
 }
 
 .r {
