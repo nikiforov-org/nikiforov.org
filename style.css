@@ -99,7 +99,7 @@ h1 {
 }
 
 .card:nth-child(2) .card-title {
-    color: green;
+    color: lightgreen;
 }
 
 .card:nth-child(3) .card-title {
