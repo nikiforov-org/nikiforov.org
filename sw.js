@@ -1,4 +1,5 @@
 const fetchListener = e => {
+  console.log('listener is on');
   e.respondWith(
     fetch(e.request)
       .then(response => {
