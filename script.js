@@ -24,6 +24,7 @@ buttons.forEach(button => {
 //     e.preventDefault();
 // });
 const makeFetch = () => {
+    console.log('app fetch');
     fetch('data.json')
 }
 
