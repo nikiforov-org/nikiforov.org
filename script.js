@@ -29,7 +29,7 @@ const makeFetch = () => {
 }
 
             if ('serviceWorker' in navigator) {
-                navigator.serviceWorker.register(`/sw.js`).then(registration => {
+                navigator.serviceWorker.register(`/sw.js?876`).then(registration => {
                     console.log(`[Service Worker]: Registration successful`);
                     console.log(`Registration scope: ${ registration.scope }`);
                     // Listen Service Worker Messages
