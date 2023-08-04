@@ -3,7 +3,11 @@ const fetchListener = e => {
     fetch(e.request)
       .then(response => {
         console.log('SW successfuly intercepted request');
-        return false;
+        return response.json()
+                  .then(data => {
+                    console.log(`Data message is: ${data.message}`)
+                    return new Response();
+                  });
       })
   )
 };
