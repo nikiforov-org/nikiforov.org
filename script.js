@@ -20,28 +20,6 @@ buttons.forEach(button => {
     })
 });
 
-// document.body.addEventListener(`contextmenu`, e => {
-//     e.preventDefault();
-// });
-const makeFetch = () => {
-    console.log('app fetch');
-    fetch('data.json')
-}
-
-            if ('serviceWorker' in navigator) {
-                navigator.serviceWorker.register(`/sw.js?876`).then(registration => {
-                    console.log(`[Service Worker]: Registration successful`);
-                    console.log(`Registration scope: ${ registration.scope }`);
-                    // Listen Service Worker Messages
-                    navigator.serviceWorker.addEventListener(`message`, e => actions(e.data));
-
-                    /**
-                     * Init application after successful registration in proper scope
-                     */
-                    makeFetch();
-
-                }, error => {
-                    console.warn(`[Service Worker]: Registration failed`);
-                    console.error(error);
-                });
-            }
+document.body.addEventListener(`contextmenu`, e => {
+    e.preventDefault();
+});
